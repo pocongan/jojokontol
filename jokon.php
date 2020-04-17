@@ -103,10 +103,7 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("yellow",".");
         sleep(1);
         }
-        sleep(5);
-        $boba09 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code"BIARKAMUSEHAT"}');
-        $messageboba09 = fetch_value($boba09,'"message":"','"');
-        echo "\n".color("green"," Message: ".$messageboba09);
+        
         sleep(3);
         $cekvoucher = request('/gopoints/v3/wallet/vouchers?limit=13&page=1', $token);
         $total = fetch_value($cekvoucher,'"total_vouchers":',',');
@@ -181,8 +178,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
          $pilih1 = trim(fgets(STDIN));
          if($pilih1 == "y" || $pilih1 == "Y"){
          //if($pilih1 == "y" && strpos($no, "628")){
-         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN GOPAY KAMU = 111111 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
-         $data2 = '{"pin":"111111"}';
+         echo color("nevy","▬▬▬▬▬▬▬▬▬▬▬▬▬▬ PIN GOPAY KAMU = 112233 ▬▬▬▬▬▬▬▬▬▬▬▬")."\n";
+         $data2 = '{"pin":"112233"}';
          $getotpsetpin = request("/wallet/pin", $token, $data2, null, null, $uuid);
          echo "Otp pin: ";
          $otpsetpin = trim(fgets(STDIN));
