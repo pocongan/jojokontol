@@ -7,15 +7,23 @@ echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
 echo "\e[93m   \e[96m  JOJOKONTOL \e[93m \n";
 echo "\e[93m   \e[96m  JOJOKONTOL \e[93m \n";
 echo "\e[96m  ==============================================\n";
-echo "\e[96m  =\e[95m - VOUCHER GOFOOD EATLAH           🇮🇩 \e[96m=\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
+echo "\e[96m  ==============================================\n";
 echo "\e[96m  =\e[95m - VOUCHER GOFOOD                  🇮🇩 \e[96m=\n";
 echo "\e[96m  =\e[95m - VOUCHER GOFOOD                  🇮🇩 \e[96m=\n";
-echo "\e[96m  =\e[95m - VOUCHER DISKON BIAR SEHAT       🇮🇩 \e[96m=\n";
 echo "\e[96m  ==============================================\n";
 echo "\e[96m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 ulang:
 echo "\n";
-echo "\e[96m            (Bagaimana Kabarmu Hari ini $input)               \n";
+echo "\e[96m            (Ngacengkah Kontolmu hari ini $input)               \n";
 echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n";
 // function change(){
         $nama = nama();
@@ -60,20 +68,8 @@ echo "\e[89m▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬�
         echo color("nevy","+] Your access token : ".$token."\n\n");
         save("token.txt",$token);
         echo color("nevy","\n▬▬▬▬▬▬▬▬▬▬▬▬ AUTO REDEEM VOUCHER GOJEK ▬▬▬▬▬▬▬▬▬▬▬▬");
-        echo "\n".color("nevy"," Claim VC EATLAH");
-        echo "\n".color("yellow","Tunggu Sebentar");
-        for($a=1;$a<=3;$a++){
-        echo color("yellow",".");
-        sleep(10);
-        }
-        $code1 = request('/go-promotions/v1/promotions/enrollments', $token, '{"promo_code":"EATLAH"}');
-        $message = fetch_value($code1,'"message":"','"');
-        if(strpos($code1, 'Promo kamu sudah bisa dipakai')){
-        echo "\n".color("green"," Message: ".$message);
-        goto gocar;
-        }else{
-        echo "\n".color("red"," Message: ".$message);
-	      gocar:
+        
+
         echo "\n".color("nevy"," Claim VC GOFOOD A");
         echo "\n".color("yellow"," Tunggu Sebentar");
         for($a=1;$a<=3;$a++){
